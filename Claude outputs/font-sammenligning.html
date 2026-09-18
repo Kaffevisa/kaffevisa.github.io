@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Font-sammenligning – Kaffevisa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f4efe2;
+    --paper-alt:#eae2d0;
+    --ink:#201c16;
+    --ink-soft:#4c4436;
+    --rust:#a3402a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family: 'Courier New', monospace;
+    padding: 32px 20px 60px;
+  }
+  h1.page-title{
+    text-align:center;
+    font-size:1.4rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    margin-bottom: 40px;
+    color: var(--ink-soft);
+  }
+  .sample{
+    max-width: 640px;
+    margin: 0 auto 36px;
+    background: #faf6ec;
+    border: 1.5px solid var(--ink);
+    border-radius: 2px;
+    box-shadow: 4px 4px 0 var(--ink);
+    padding: 28px 30px 32px;
+  }
+  .sample .label{
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--rust);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .sample h2{
+    margin: 0 0 10px;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+  .sample .nav-sample{
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+  }
+  .sample p{
+    margin: 0;
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .f-courierprime  h2, .f-courierprime  .nav-sample, .f-courierprime  p { font-family: 'Courier Prime', 'Courier New', monospace; }
+  .f-specialelite  h2, .f-specialelite  .nav-sample, .f-specialelite  p { font-family: 'Special Elite', 'Courier New', monospace; }
+  .f-couriernew    h2, .f-couriernew    .nav-sample, .f-couriernew    p { font-family: 'Courier New', monospace; }
+</style>
+</head>
+<body>
+
+<h1 class="page-title">Skrivemaskin-fonter – sammenligning</h1>
+
+<div class="sample f-courierprime">
+  <div class="label">Courier Prime (nåværende fallback)</div>
+  <h2>Kaffevisa</h2>
+  <div class="nav-sample">HJEM &nbsp; OM &nbsp; INNLEGG</div>
+  <p>Ren og lesbar skrivemaskin-stil. Mye brukt i manus og skjermtekst — jevn og ryddig, men fortsatt tydelig "skrivemaskin".</p>
+</div>
+
+<div class="sample f-specialelite">
+  <div class="label">Special Elite</div>
+  <h2>Kaffevisa</h2>
+  <div class="nav-sample">HJEM &nbsp; OM &nbsp; INNLEGG</div>
+  <p>Ujevnt trykk og litt "slitt" utseende, som en faktisk brukt skrivemaskin. Mer karakter og patina, men litt tyngre å lese i lange avsnitt.</p>
+</div>
+
+<div class="sample f-couriernew">
+  <div class="label">Courier New (system-standard)</div>
+  <h2>Kaffevisa</h2>
+  <div class="nav-sample">HJEM &nbsp; OM &nbsp; INNLEGG</div>
+  <p>Den klassiske, nøytrale skrivemaskin-fonten som finnes på alle systemer. Funksjonell, men mindre særegen og "retro" enn de to over.</p>
+</div>
+
+</body>
+</html>

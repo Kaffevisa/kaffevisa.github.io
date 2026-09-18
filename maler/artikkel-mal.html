@@ -1,0 +1,79 @@
+<!--
+  ARTIKKELMAL – Kaffevisa
+  ========================
+  Bruk denne malen som utgangspunkt for nye artikler:
+    1. Kopier filen inn i /innlegg/-mappen og gi den et beskrivende filnavn
+       (f.eks. innlegg/favorittkaffebonner-2026.html).
+    2. Bytt ut alt som står i [hakeparenteser] under.
+    3. Legg gjerne til et kort på forsiden (index.html) som lenker til den
+       nye artikkelen, med samme "post-card"-struktur som brukes der.
+  Filstiene under (../css, ../js, ../assets, ../index.html) forutsetter at
+  artikkelen ligger én mappe under rot-mappen, akkurat som /innlegg/.
+-->
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[Artikkeltittel] – Kaffevisa</title>
+<meta name="description" content="[Kort beskrivelse av artikkelen, 1-2 setninger – brukes ved deling og i søkemotorer.]">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="logo"><span class="cup">☕</span> Kaffevisa</a>
+    <button class="nav-toggle" aria-label="Åpne meny">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="../index.html">Hjem</a></li>
+      <!-- Juster/legg til lenker her etter hvert som flere sider lages,
+           f.eks. en oversikt over alle innlegg eller en "Om"-side. -->
+    </ul>
+  </nav>
+</header>
+
+<section class="article-header">
+  <div class="container">
+    <p class="date">[Dag]. [måned] [år]</p>
+    <h1>[Artikkeltittel]</h1>
+  </div>
+</section>
+
+<main class="article-body">
+  <a href="../index.html" class="back-link">&larr; Tilbake til forsiden</a>
+
+  <p>
+    [Ingress – en kort, fengende innledning som gir leseren lyst til å
+    lese videre.]
+  </p>
+
+  <h2>[Første underoverskrift]</h2>
+  <p>
+    [Brødtekst. Del gjerne artikkelen inn i flere avsnitt og bruk
+    overskrifter (h2) for å strukturere innholdet.]
+  </p>
+
+  <h2>[Andre underoverskrift]</h2>
+  <p>
+    [Mer brødtekst her.]
+  </p>
+
+  <!-- Bilde-eksempel (fjern eller behold etter behov):
+  <img src="../assets/[bildefil].jpg" alt="[Beskrivelse av bildet]">
+  -->
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Kaffevisa.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
